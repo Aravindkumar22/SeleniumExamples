@@ -71,7 +71,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebDriverExamples.cs" />
+    <Compile Include="Scaffolding.cs" />
+    <Compile Include="_1_Bare_Minimum_Web_Driver_Example.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
