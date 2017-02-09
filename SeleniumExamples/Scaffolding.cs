@@ -16,7 +16,7 @@ namespace SeleniumExamples
 
         private static string GetBinDirectory()
         {
-            var testAssemblyDirectory = Path.GetDirectoryName(Assembly.GetAssembly(typeof(WebDriverExamples)).CodeBase);
+            var testAssemblyDirectory = Path.GetDirectoryName(Assembly.GetAssembly(typeof(Scaffolding)).CodeBase);
             return TrimSchemeFromUri(testAssemblyDirectory);
         }
 
