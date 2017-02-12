@@ -4,4 +4,4 @@ Examples of using Selenium for automated ASP.NET UI tests in C# for my [blog ser
 
 ### License
 
-[MIT License, ](https://raw.githubusercontent.com/matthewrwilton/SeleniumExamples/master/LICENSE)
+[MIT License](https://raw.githubusercontent.com/matthewrwilton/SeleniumExamples/master/LICENSE)
