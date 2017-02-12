@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium.Chrome;
+using SeleniumExamples.Scaffolding;
 using Xunit;
 
 namespace SeleniumExamples
@@ -16,7 +17,7 @@ namespace SeleniumExamples
         [Fact]
         public void Open_Google_Chrome()
         {
-            using (var driver = new ChromeDriver(Scaffolding.DriverDirectory))
+            using (var driver = new ChromeDriver(ProjectDirectories.GetDriversDirectory()))
             {
                 driver.Navigate().GoToUrl("https://www.google.com.au");
             }

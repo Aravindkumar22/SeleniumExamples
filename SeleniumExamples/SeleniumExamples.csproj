@@ -71,8 +71,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Scaffolding.cs" />
+    <Compile Include="Scaffolding\ProjectDirectories.cs" />
+    <Compile Include="Scaffolding\WebAppFixture.cs" />
+    <Compile Include="Scaffolding\WebAppFixtureTestCollection.cs" />
     <Compile Include="_1_Bare_Minimum_Web_Driver_Example.cs" />
+    <Compile Include="_2_Running_A_Web_App.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
