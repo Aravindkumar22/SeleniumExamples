@@ -6,29 +6,47 @@
     <div class="col-md-12">
         <h2>Example page for testing waits</h2>
 
-        <p>The following combo starts with a placeholder option and after 3 seconds updates with a new item.</p>
+        <p class="alert alert-danger" id="message" style="display:none"></p>
 
-        <select id="combo" >
-            <option>Placeholder</option>
-        </select>
+        <div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="email" class="form-control" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+
+            <button type="button" class="btn btn-default" id="login">Log in</button>
+        </div>
     </div>
 </div>
 
 @section scripts {
     <script>
         $(document).ready(function () {
-            var combo = $("#combo");
+            var loginButton = $("#login");
 
-            // Simulate loading the combo items from another source.
-            // Wait 3 seconds then update the combo.
+            loginButton.on("click", function () {
+                var usernameTxt = $("#username"),
+                    username = usernameTxt[0].value
+                    passwordTxt = $("#password"),
+                    password = passwordTxt[0].value;
 
-            setTimeout(function () {
-                combo.empty();
-                combo.append(
-                    $("<option id=\"loaded\"></option>").text("Loaded")
-                );
-            },
-            3 * 1000);
+                // Timeout to simulate making login request.
+                setTimeout(function () {
+                    if (username === "user" && password === "password") {
+                        window.location = "/";
+                    }
+                    else {
+                        var messageContainer = $("#message");
+                        messageContainer.text("Invalid username and password.")
+                        messageContainer.css("display", "");
+                    }
+                },
+                2 * 1000);
+            });
         });
     </script>
 }
