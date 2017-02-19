@@ -8,6 +8,7 @@ namespace SeleniumExamples.PageObjects
     public class LoginPage
     {
         public const string Url = "http://localhost:59837/Login";
+        public const string LoginFailureMessage = "Invalid username and password.";
 
         private readonly IWebDriver _driver;
 
@@ -67,6 +68,10 @@ namespace SeleniumExamples.PageObjects
             UsernameInput.SendKeys(username);
             PasswordInput.SendKeys(password);
             LoginButton.Click();
+            
+            var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(5));
+            wait.Until(d => CurrentMessage() == LoginFailureMessage);
+
             return new LoginPage(_driver);
         }
     }

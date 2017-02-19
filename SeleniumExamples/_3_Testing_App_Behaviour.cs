@@ -22,5 +22,14 @@ namespace SeleniumExamples
             
             Assert.True(HomePage.IsCurrentPage(_fixture.Driver));
         }
+
+        [Fact]
+        public void Login_Failure_Message_Displayed_On_Unsuccessful_Login()
+        {
+            var loginPage = LoginPage.GoTo(_fixture.Driver);
+            loginPage.LoginUnsuccessfully("not a user", "");
+
+            Assert.True(loginPage.CurrentMessage() == LoginPage.LoginFailureMessage);
+        }
     }
 }
