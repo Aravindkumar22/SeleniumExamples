@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium.Chrome;
-using SeleniumExamples.Scaffolding;
+using SeleniumExamples.Fixtures;
 using Xunit;
 
 namespace SeleniumExamples

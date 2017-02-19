@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace SeleniumExamples.Scaffolding
+namespace SeleniumExamples.Fixtures
 {
     /// <summary>
     /// This is an xUnit test collection for the WebAppFixture.

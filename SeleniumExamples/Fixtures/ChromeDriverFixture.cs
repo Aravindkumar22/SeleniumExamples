@@ -1,7 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium.Chrome;
 
-namespace SeleniumExamples.Scaffolding
+namespace SeleniumExamples.Fixtures
 {
     /// <summary>
     /// Creates a ChromeDriver instance for use in Selenium tests.

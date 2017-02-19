@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace SeleniumExamples.Scaffolding
+namespace SeleniumExamples.Fixtures
 {
     /// <summary>
     /// This is an xUnit test collection that starts the example web app and creates a ChromeDriver instance.

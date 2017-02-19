@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace SeleniumExamples.Scaffolding
+namespace SeleniumExamples.Fixtures
 {
     /// <summary>
     /// Starts an IIS Express instance to run the ExampleWebApp.

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace SeleniumExamples.Scaffolding
+namespace SeleniumExamples.Fixtures
 {
     static class ProjectDirectories
     {

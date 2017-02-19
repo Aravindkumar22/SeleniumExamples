@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium.Chrome;
-using SeleniumExamples.Scaffolding;
+using SeleniumExamples.Fixtures;
 using Xunit;
 
 namespace SeleniumExamples
@@ -18,7 +18,7 @@ namespace SeleniumExamples
         {
             using (var driver = new ChromeDriver(ProjectDirectories.GetDriversDirectory()))
             {
-                driver.Navigate().GoToUrl("http://localhost:59837/Home/Index");
+                driver.Navigate().GoToUrl("http://localhost:59837/");
                 driver.FindElementById("hello");
             }
         }

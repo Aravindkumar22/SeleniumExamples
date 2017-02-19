@@ -74,15 +74,17 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="PageObjects\HomePage.cs" />
+    <Compile Include="PageObjects\LoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Scaffolding\ProjectDirectories.cs" />
-    <Compile Include="Scaffolding\ChromeDriverFixture.cs" />
-    <Compile Include="Scaffolding\SeleniumTestCollection.cs" />
-    <Compile Include="Scaffolding\WebAppFixture.cs" />
-    <Compile Include="Scaffolding\WebAppFixtureTestCollection.cs" />
+    <Compile Include="Fixtures\ProjectDirectories.cs" />
+    <Compile Include="Fixtures\ChromeDriverFixture.cs" />
+    <Compile Include="Fixtures\SeleniumTestCollection.cs" />
+    <Compile Include="Fixtures\WebAppFixture.cs" />
+    <Compile Include="Fixtures\WebAppFixtureTestCollection.cs" />
     <Compile Include="_1_Bare_Minimum_Web_Driver_Example.cs" />
     <Compile Include="_2_Running_A_Web_App.cs" />
-    <Compile Include="_3_Waits.cs" />
+    <Compile Include="_3_Testing_App_Behaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
